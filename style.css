@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image: url('../images/pexels-pixabay-207896\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Jost', sans-serif;
+    color: white;
+}
+
+
+
+#navigation-menu {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+
+#logo {
+    width: 100px;
+    padding-left: 20px;
+}
+#menu {
+    display: none;
+}
+
+#navigation-menu #main-menu-items ul {
+    display: flex;
+}
+
+#navigation-menu #main-menu-items ul li {
+    list-style: none;
+}
+#navigation-menu #main-menu-items ul li a {
+    text-decoration: none;
+    padding-right: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+#navigation-menu #main-menu-items ul li a:hover {
+    color: #4FAADE;
+}
+
+
+
+#navigation-menu #main-menu-items ul li .login:hover {
+    color: white;
+}
+
+#navigation-menu #main-menu-items ul li .register:hover {
+    color: white;
+    
+}
+
+#menu-items {
+    display: none;
+}
+
+
+#navigation-menu {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+
+#logo {
+    width: 100px;
+    padding-left: 20px;
+}
+#menu {
+    display: none;
+}
+
+#navigation-menu #main-menu-items ul {
+    display: flex;
+}
+
+#navigation-menu #main-menu-items ul li {
+    list-style: none;
+}
+#navigation-menu #main-menu-items ul li a {
+    text-decoration: none;
+    padding-right: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+#navigation-menu #main-menu-items ul li .login {
+    background-color: #4FAADE;
+    color: black;
+    padding: 10px;
+    font-weight: bolder;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+
+
+#apply-color , .title {
+    color: white;
+}
+
+#navigation-menu #main-menu-items ul li .register {
+    background-color: rgb(217, 95, 95);
+    color: black;
+    padding: 10px;
+    font-weight: bolder;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 20px;
+    
+}
+#navigation-menu #main-menu-items ul li .register:hover {
+    color: white;
+    
+}
+
+
+
+footer .fa-solid {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.fa-brands {
+    margin-left: 10px;
+    cursor: pointer;
+} 
+
+
+
+footer {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 230px;
+     background-color: #292727;
+     color: white;
+     padding-top: 20px;
+     padding-bottom: 20px;
+}
+@media screen and (max-width: 1024px){
+    body {
+        background-image: url('../images/pexels-pixabay-207896\ 1.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        font-family: 'Jost', sans-serif;
+    }
+    #logo{
+        width: 120px;
+        padding-left: 20px;
+    }
+    #menu {
+        display: block;
+    }
+    #menu {
+        color: white;
+        padding-right: 40px;
+    }
+    #navigation-menu {
+        display: flex;
+        padding-top: 40px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #menu-items {
+        display: none;
+        background-color: #292727;
+        height: 430px;
+    }
+    hr {
+        display: none;
+    }
+    #menu-items li a{
+        text-decoration: none;
+        padding: 10px;
+    }
+    
+    #menu-items li {
+        margin-bottom: 20px;
+        list-style: none;
+        text-align: center;
+    }
+
+    #menu-items li a:hover {
+        color: #4FAADE;
+    }
+    #main-menu-items {
+        display: none;
+    }
+    #menu-items .login {
+        background-color: #4FAADE;
+        color: black;
+        padding: 10px;
+        font-weight: bolder;
+        height: 80px;
+        border-radius: 10px;
+    }
+
+    #menu-items .login:hover {
+        color: white;
+    }
+
+    #menu-items .register {
+        background-color: rgb(217, 95, 95);
+        margin-top: 10px;
+        font-weight: bolder;
+        height: 80px;
+        border-radius: 10px;
+    }
+    .getstarted-btn {
+        padding-top: 50px;
+    }
+
+    
+    .fa-brands {
+        margin-left: 10px;
+        cursor: pointer;
+    } 
+}

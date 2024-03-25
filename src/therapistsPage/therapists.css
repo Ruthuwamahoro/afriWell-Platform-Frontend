@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+:root {
+    --custom-color: hsla(209, 13%, 11%, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-image: url('../images/stormseeker-rX12B5uX7QM-unsplash\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Jost', sans-serif;
+    color: white;
+}
+
+
+
+#navigation-menu {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+
+#logo {
+    width: 100px;
+    padding-left: 20px;
+}
+#menu {
+    display: none;
+}
+
+#navigation-menu #main-menu-items ul {
+    display: flex;
+}
+
+#navigation-menu #main-menu-items ul li {
+    list-style: none;
+}
+#navigation-menu #main-menu-items ul li a {
+    text-decoration: none;
+    padding-right: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+#navigation-menu #main-menu-items ul li a:hover {
+    color: #4FAADE;
+}
+
+
+
+#navigation-menu #main-menu-items ul li .login:hover {
+    color: white;
+}
+
+#navigation-menu #main-menu-items ul li .register:hover {
+    color: white;
+    
+}
+
+#menu-items {
+    display: none;
+}
+
+
+#navigation-menu {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+
+#logo {
+    width: 100px;
+    padding-left: 20px;
+}
+#menu {
+    display: none;
+}
+
+#navigation-menu #main-menu-items ul {
+    display: flex;
+}
+
+#navigation-menu #main-menu-items ul li {
+    list-style: none;
+}
+#navigation-menu #main-menu-items ul li a {
+    text-decoration: none;
+    padding-right: 30px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+#navigation-menu #main-menu-items ul li .login {
+    background-color: #4FAADE;
+    color: black;
+    padding: 10px;
+    font-weight: bolder;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+
+
+#apply-color , .title {
+    color: white;
+}
+
+#navigation-menu #main-menu-items ul li .register {
+    background-color: rgb(217, 95, 95);
+    color: black;
+    padding: 10px;
+    font-weight: bolder;
+    height: 80px;
+    border-radius: 10px;
+    margin-right: 20px;
+    
+}
+#navigation-menu #main-menu-items ul li .register:hover {
+    color: white;
+    
+}
+
+.therapists-container h1{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 70px;
+
+}
+
+
+.great-therapists {
+    display: flex;
+    justify-content: space-around;
+   
+    padding-right: 70px;
+
+}
+
+.therapists-img {
+    width: 170px;
+    height: 168px;
+    border-radius: 50%;
+    margin-top: 30px;
+}
+.great-therapists #therapists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--custom-color);
+    margin-left: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    border-left: 4px solid white;
+}
+.therapists-info p {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.background-button {
+    padding: 10px 20px;
+    background-color: #20A5C2; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+.background-button:hover {
+    background-color: #0A89A7;
+}
+
+.availability-button {
+    padding: 10px 20px;
+    background-color: #204EC2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 10px 0; 
+}
+
+.availability-button:hover {
+    background-color: #1A3E98; 
+}
+
+
+
+
+
+
+footer .fa-solid {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+.fa-brands {
+    margin-left: 10px;
+    cursor: pointer;
+} 
+
+
+
+footer {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 230px;
+     background-color: #292727;
+     color: white;
+     padding-top: 20px;
+     padding-bottom: 20px;
+}
+@media screen and (max-width: 1024px){
+    body {
+        background-image: url('../images/stormseeker-rX12B5uX7QM-unsplash\ 1.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        font-family: 'Jost', sans-serif;
+    }
+    #logo{
+        width: 120px;
+        padding-left: 20px;
+    }
+    #menu {
+        display: block;
+    }
+    #menu {
+        color: white;
+        padding-right: 40px;
+    }
+    #navigation-menu {
+        display: flex;
+        padding-top: 40px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #menu-items {
+        display: none;
+        background-color: #292727;
+        height: 430px;
+    }
+    hr {
+        display: none;
+    }
+    #menu-items li a{
+        text-decoration: none;
+        padding: 10px;
+    }
+    
+    #menu-items li {
+        margin-bottom: 20px;
+        list-style: none;
+        text-align: center;
+    }
+
+    #menu-items li a:hover {
+        color: #4FAADE;
+    }
+    #main-menu-items {
+        display: none;
+    }
+
+    .great-therapists {
+        display: block;
+    }
+    #menu-items .login {
+        background-color: #4FAADE;
+        color: black;
+        padding: 10px;
+        font-weight: bolder;
+        height: 80px;
+        border-radius: 10px;
+    }
+
+    #menu-items .login:hover {
+        color: white;
+    }
+
+    #menu-items .register {
+        background-color: rgb(217, 95, 95);
+        margin-top: 10px;
+        font-weight: bolder;
+        height: 80px;
+        border-radius: 10px;
+    }
+    .getstarted-btn {
+        padding-top: 50px;
+    }
+    .therapists-container {
+        margin-top: 100px;
+
+    }
+    .therapists-container h1 {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    .therapists-img {
+        width: 100px;
+        height: 118px;
+        border-radius: 50%;
+    }
+    .great-therapists {
+
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .great-therapists #therapists{
+        display: block;
+        background-color: var(--custom-color);
+        margin-bottom: 20px;
+        margin-left: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 100%;
+        border-left: 4px solid white;
+        border-right: none;
+        
+
+
+    }
+
+
+    .great-therapists #therapists .therapists-info {
+        text-align: center;
+    }
+
+    .great-therapists #therapists .therapists-info h4 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+
+
+    .great-therapists #therapists img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+    .therapists-info p {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .background-button {
+        padding: 10px 20px;
+        background-color: #20A5C2; 
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+    }
+    
+    .background-button:hover {
+        background-color: #0A89A7;
+    }
+    
+    .availability-button {
+        padding: 10px 20px;
+        background-color: #204EC2;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        margin: 10px 0; 
+    }
+    
+    .availability-button:hover {
+        background-color: #1A3E98; 
+    }
+
+
+
+    
+    .fa-brands {
+        margin-left: 10px;
+        cursor: pointer;
+    } 
+
+    
+}
