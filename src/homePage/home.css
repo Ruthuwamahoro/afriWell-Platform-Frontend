@@ -74,6 +74,9 @@ body {
 #apply-color , .title {
     color: white;
 }
+.address {
+    display: block;
+}
 
 #navigation-menu #main-menu-items ul li .register {
     background-color: rgb(217, 95, 95);
@@ -336,7 +339,10 @@ footer {
     .fa-brands {
         margin-left: 10px;
         cursor: pointer;
-    }    
+    }
+    .address {
+        display: none;
+    }   
 
 }
 
