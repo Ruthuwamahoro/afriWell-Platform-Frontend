@@ -91,3 +91,23 @@ body {
     color: white;
     font-size: 30px;
 }
+
+@media screen and (max-width: 1024px){
+    .booking-form  {
+        width: 300px
+    }
+    .booking-form form div label {
+        font-size: 16px;
+    }
+    .booking-form form div input {
+        width: 200px;
+    }
+    .booking-form form div textarea {
+        width: 200px;
+    }
+    .contacy {
+        margin-left: 40px;
+        margin-right: 40px;
+
+    }
+}

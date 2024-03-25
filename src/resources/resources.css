@@ -268,6 +268,9 @@ footer {
      padding-top: 20px;
      padding-bottom: 20px;
 }
+.address {
+    display: block;
+}
 @media screen and (max-width: 1024px){
     body {
         background-image: url('../images/pexels-pixabay-265152\ 1.png');
@@ -276,11 +279,14 @@ footer {
         font-family: 'Jost', sans-serif;
     }
     #logo{
-        width: 120px;
-        padding-left: 20px;
+        width: 50px;
+        padding-left: 0px;
+        padding-top: 20px;
     }
     #menu {
         display: block;
+        color: white;
+        padding-right: 0px;
     }
     #menu {
         color: white;
@@ -333,11 +339,14 @@ footer {
     }
 
     #menu-items .register {
-        background-color: rgb(217, 95, 95);
+        background-color: rgba(189, 83, 83, 0.556);
         margin-top: 10px;
         font-weight: bolder;
         height: 80px;
         border-radius: 10px;
+    }
+    #menu-items li:nth-of-type(8){
+        margin-bottom: 40px;
     }
     .getstarted-btn {
         padding-top: 50px;
@@ -420,6 +429,12 @@ footer {
     .explore-more a:hover {
         background-color: #0056b3; /* Background color on hover */
     }
+    .address {
+        display: none;
+    }
+    footer {
+        padding: 40px 20px
+    } 
 
 
 }

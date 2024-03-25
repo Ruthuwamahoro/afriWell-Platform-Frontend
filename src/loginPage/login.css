@@ -105,3 +105,18 @@ body {
     color: white;
     font-size: 30px;
 }
+
+@media screen and (max-width: 1024px){
+    .booking-form  {
+        width: 300px
+    }
+    .booking-form form div label {
+        font-size: 16px;
+    }
+    .booking-form form div input {
+        width: 200px;
+    }
+    .booking-form form div select {
+        width: 200px;
+    }
+}

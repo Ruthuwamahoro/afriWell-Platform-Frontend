@@ -92,8 +92,11 @@ body {
     color: white;
     
 }
+#navigation-menu #menu-items ul{
+    display: none;
+}
 
-#menu-items .login {
+/* #menu-items .login {
     background-color: #4FAADE;
     color: black;
     padding: 10px;
@@ -112,7 +115,7 @@ body {
     font-weight: bolder;
     height: 80px;
     border-radius: 10px;
-}
+} */
 .title {
     text-align: center;
     color: #4FAADE;
@@ -171,12 +174,14 @@ footer .fa-solid {
 
 footer {
      display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
      margin-top: 80px;
      background-color: #292727;
      color: white;
      padding-top: 20px;
      padding-bottom: 20px;
+     padding-left: 40px;
+     padding-right: 40px;
 }
 
 
@@ -225,18 +230,19 @@ footer {
 @media screen and (max-width: 768px) {
     body {
         background-image: url('../images/pexels-bello-olamide-14440666\ 2.png');
-        background-size: 100% 100%;
+        background-size: cover;
         background-repeat: no-repeat;
         font-family: 'Jost', sans-serif;
     }
     #logo{
-        width: 120px;
-        padding-left: 20px;
+        width: 50px;
+        padding-left: 0px;
+        padding-top: 20px;
     }
     #menu {
         display: block;
         color: white;
-        padding-right: 40px;
+        padding-right: 0px;
     }
     #navigation-menu {
         display: flex;
@@ -249,7 +255,7 @@ footer {
 
 
     #menu-items {
-        display: none;
+        display: block;
         background-color: #292727;
         height: 430px;
     }
@@ -262,13 +268,23 @@ footer {
         margin-bottom: 20px;
         list-style: none;
     }
-
-    #menu-items li a:hover {
-        color: #4FAADE;
+    #menu-items li:nth-of-type(8){
+        margin-bottom: 40px;
     }
+
+
     #main-menu-items {
         display: none;
     }
+
+    #menu-items .login:hover {
+        color: white;
+    }
+    #menu-items li a:hover {
+        color: #4FAADE;
+        font-weight: 900px;
+    }
+
 
     #apply-color {
         color: white;
@@ -309,6 +325,7 @@ footer {
         color: white;
     }
 
+
     #menu-items .login {
         background-color: #4FAADE;
         color: black;
@@ -316,15 +333,12 @@ footer {
         font-weight: bolder;
         height: 80px;
         border-radius: 10px;
+        
     }
 
-    #menu-items .login:hover {
-        color: white;
-    }
 
     #menu-items .register {
-        background-color: rgb(217, 95, 95);
-        margin-top: 10px;
+        background-color: rgba(189, 83, 83, 0.556);
         font-weight: bolder;
         height: 80px;
         border-radius: 10px;
@@ -342,7 +356,10 @@ footer {
     }
     .address {
         display: none;
-    }   
+    } 
+    footer {
+        padding: 40px 20px
+    }  
 
 }
 

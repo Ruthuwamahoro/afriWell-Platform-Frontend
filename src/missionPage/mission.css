@@ -119,100 +119,6 @@ hr {
     font-size: 19px;
 
 }
-
-body {
-    background-image: url('../images/pexels-nitin-arya-1029141\ 1.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: 'Jost', sans-serif;
-    color: white;
-}
-
-
-
-#welcome-section #menu-items {
-    display: none;
-}
-
-#navigation-menu {
-    display: flex;
-    padding-top: 40px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-
-}
-
-#logo {
-    width: 100px;
-    padding-left: 20px;
-}
-#menu {
-    display: none;
-}
-
-#navigation-menu #main-menu-items ul {
-    display: flex;
-}
-
-#navigation-menu #main-menu-items ul li {
-    list-style: none;
-}
-#navigation-menu #main-menu-items ul li a {
-    text-decoration: none;
-    padding-right: 30px;
-    color: white;
-    font-weight: bolder;
-}
-
-#navigation-menu #main-menu-items ul li a:hover {
-    color: #4FAADE;
-}
-
-
-#navigation-menu #main-menu-items ul li .login {
-    background-color: #4FAADE;
-    color: black;
-    padding: 10px;
-    font-weight: bolder;
-    height: 80px;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-
-#navigation-menu #main-menu-items ul li .login:hover {
-    color: white;
-}
-#apply-color , .title {
-    color: white;
-}
-
-#navigation-menu #main-menu-items ul li .register {
-    background-color: rgb(217, 95, 95);
-    color: black;
-    padding: 10px;
-    font-weight: bolder;
-    height: 80px;
-    border-radius: 10px;
-    margin-right: 20px;
-    
-}
-#navigation-menu #main-menu-items ul li .register:hover {
-    color: white;
-    
-}
-
-#menu-items {
-    display: none;
-}
-
-.mission-about-section {
-    display: block;
-    margin-top: 100px;
-    padding-left: 60px;
-    padding-right: 60px;
-}
 hr {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -276,6 +182,9 @@ footer {
      padding-top: 20px;
      padding-bottom: 20px;
 }
+.address {
+    display: block;
+}
 @media screen and (max-width: 1024px){
     body {
         background-image: url('../images/pexels-nitin-arya-1029141\ 1.png');
@@ -284,15 +193,17 @@ footer {
         font-family: 'Jost', sans-serif;
     }
     #logo{
-        width: 120px;
-        padding-left: 20px;
+        width: 50px;
+        padding-left: 0px;
+        padding-top: 20px;
     }
     #menu {
         display: block;
     }
     #menu {
+        display: block;
         color: white;
-        padding-right: 40px;
+        padding-right: 0px;
     }
     #navigation-menu {
         display: flex;
@@ -320,6 +231,9 @@ footer {
         list-style: none;
         text-align: center;
     }
+    #menu-items li:nth-of-type(8){
+        margin-bottom: 40px;
+    }
 
     #menu-items li a:hover {
         color: #4FAADE;
@@ -341,7 +255,7 @@ footer {
     }
 
     #menu-items .register {
-        background-color: rgb(217, 95, 95);
+        background-color: rgba(189, 83, 83, 0.556);
         margin-top: 10px;
         font-weight: bolder;
         height: 80px;
@@ -363,10 +277,7 @@ footer {
         display: block;
         margin-bottom: 20px;
     }
-    .mission-about-section .about p {
-        font-size: 16px;
-        text-align: justify;
-    }
+ 
 
     .mission-about-section .mission {
         font-size: 16px;
@@ -385,6 +296,12 @@ footer {
         text-align: justify;
 
     }
+    .address {
+        display: none;
+    }
+    footer {
+        padding: 40px 20px
+    } 
 
     
 

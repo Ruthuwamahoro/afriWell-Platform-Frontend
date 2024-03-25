@@ -230,6 +230,9 @@ footer {
      padding-top: 20px;
      padding-bottom: 20px;
 }
+.address {
+    display: block;
+}
 @media screen and (max-width: 1024px){
     body {
         background-image: url('../images/stormseeker-rX12B5uX7QM-unsplash\ 1.png');
@@ -238,15 +241,14 @@ footer {
         font-family: 'Jost', sans-serif;
     }
     #logo{
-        width: 120px;
-        padding-left: 20px;
+        width: 50px;
+        padding-left: 0px;
+        padding-top: 20px;
     }
     #menu {
         display: block;
-    }
-    #menu {
         color: white;
-        padding-right: 40px;
+        padding-right: 0px;
     }
     #navigation-menu {
         display: flex;
@@ -299,11 +301,14 @@ footer {
     }
 
     #menu-items .register {
-        background-color: rgb(217, 95, 95);
+        background-color: rgba(189, 83, 83, 0.556);
         margin-top: 10px;
         font-weight: bolder;
         height: 80px;
         border-radius: 10px;
+    }
+    #menu-items li:nth-of-type(8){
+        margin-bottom: 40px;
     }
     .getstarted-btn {
         padding-top: 50px;
@@ -396,6 +401,12 @@ footer {
     .fa-brands {
         margin-left: 10px;
         cursor: pointer;
+    } 
+    .address {
+        display: none;
+    }
+    footer {
+        padding: 40px 20px
     } 
 
     
