@@ -14,40 +14,55 @@
             <small><a href="../availability/availability.html"><i class="fa-regular fa-circle-left"></i></a></small>
             <small>Back</small>
         </div>
+        <div class="notification" id="notification">
+            Successfully submitted
+        </div>
         <div>
             <h1 class="container-form">Booking Form</h1>
             <div  class="booking-form">
+                <div id="loader" class="loader" style="display: none;"></div>
                 <form action="">
                     <div>
-                        <label for="fname">First Name</label> <br>
-                        <input type="text" id="fname" name="fname">
+                        <label for="fname1">First Name</label> <br>
+                        <input type="text" id="fname1" name="fname1"  required>
                     </div>
                     <div>
                         <label for="lname">Last Name</label> <br>
-                        <input type="text" id="lname" name="lname">
+                        <input type="text" id="lname" name="lname"  required>
                     </div>
                     <div>
                         <label for="email">Email</label> <br>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required>
                     </div>
                     <div>
                         <label for="phone">Phone</label> <br>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div>
+
+                        <label for="therapists">Therapists</label> <br>
+                        <select name="therapists" id="therapists" required>
+                            <option value="choose">Choose</option>
+                            <option value="Dr Aimable Rurangirwa">Dr Aimable Rurangirwa</option>
+                            <option value="Phiona Ingabire">Phiona Ingabire</option>
+                        </select>
                     </div>
                     <div>
                         <label for="date">Date</label> <br>
-                        <input type="date" id="date" name="date">
+                        <input type="date" id="date" name="date" required>
                     </div>
                     <div>
                         <label for="time">Time</label> <br>
-                        <input type="time" id="time" name="time">
+                        <input type="time" id="time" name="time" required>
                     </div>
+                    <div id="errorProvidedMessage"></div>
                     <p class="explore-more">
-                        <a href="">Submit</a>
+                        <a href="" id="submit">Submit</a>
                     </p>
                 </form>
             </div>
         </div>
     </section>
+    <script src="booking.js"></script>
 </body>
 </html>
