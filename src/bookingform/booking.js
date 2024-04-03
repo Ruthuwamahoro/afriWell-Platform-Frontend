@@ -1,5 +1,3 @@
-const fullNameInput = document.getElementById('fname1')
-const lastNameINput = document.getElementById('lname')
 const emailInput = document.getElementById('email')
 const telephoneInput = document.getElementById('phone')
 const therapistsName = document.getElementById('therapists')
@@ -9,9 +7,9 @@ const submitButton = document.getElementById('submit')
 const notif = document.getElementById('notification')
 const errorMessage = document.getElementById('errorProvidedMessage')
 
-// const url = "http://localhost:8000/api/user/booking"
+const url = "http://localhost:8000/api/user/booking"
 
-const url = "https://afriwell-platform-backend.onrender.com/api/user/booking"
+// const url = "https://afriwell-platform-backend.onrender.com/api/user/booking"
 
 
 
@@ -19,10 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     submitButton.addEventListener(('click'), async(e) => {
         e.preventDefault()
-        const fullName = fullNameInput.value
-        const lastName = lastNameINput.value
-        const email = emailInput.value
-        const phone = telephoneInput.value
         const therapists = therapistsName.value
         const date = dateInput.value
         const time = timeInput.value
@@ -32,11 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         headers.append('Accept', 'application/json');
         headers.append(`Authorization`, `Bearer ${token}`)
         const wholeData = {
-            firstName: fullName,
-            lastName: lastName,
-            phone: phone,
+            
             therapists: therapists,
-            email: email,
             date: date,
             time: time
         }   
@@ -50,16 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
         try{
             const res = await fetch(url, customization)
             const data = await res.json()
-            console.log(data);
+            console.log(data.bookingInfo._id)
+            const userId = data.bookingInfo._id
+            localStorage.setItem('userId', userId)
             if(!data.error){
                 setTimeout(function() {
                     document.getElementById("loader").style.display = "block";
                     setTimeout(function() {
                         document.getElementById("loader").style.display = "none"
-                        fullNameInput.value= ""
-                        lastNameINput.value= ""
-                        emailInput.value= ""
-                        telephoneInput.value= ""
                         therapistsName.value= ""
                         dateInput.value= ""
                         timeInput.value= ""
@@ -83,3 +72,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 })
+
+
+//being redirected to the dashboard
+
+// const getSingDash = 'https://afriwell-platform-backend.onrender.com/api/user/booking'

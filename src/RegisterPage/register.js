@@ -1,4 +1,5 @@
-const fullNameINput = document.getElementById('fname1')
+const firstNameInput = document.getElementById('fname1')
+const lastNameINput = document.getElementById('lname1')
 const emailInput = document.getElementById('email')
 const telephoneInput = document.getElementById('tel')
 const genderValue = document.getElementById('gender')
@@ -7,7 +8,8 @@ const submitButton = document.getElementById('submitButton')
 const notif = document.getElementById('notification')
 const errorMessage = document.getElementById('errorProvidedMessage')
 
-const url = "https://afriwell-platform-backend.onrender.com/api/user/register"
+// const url = "https://afriwell-platform-backend.onrender.com/api/user/register"
+const url = "http://localhost:8000/api/user/register"
 
 submitButton.addEventListener("click", (e) => {
     e.preventDefault()
@@ -15,15 +17,17 @@ submitButton.addEventListener("click", (e) => {
         const headers = new Headers();
         headers.append('Content-Type', 'application/json');
         headers.append('Accept', 'application/json');
-        const Names = fullNameINput.value
+        const first = firstNameInput.value
+        const last = lastNameINput.value
         const email = emailInput.value
         const telephone = telephoneInput.value
         const gender = genderValue.value
         const password = passwordValue.value
         const wholeData = {
-            Names: Names,
+            firstName: first,
+            lastName: last,
             email: email,
-            phoneNumber:telephone,
+            phone:telephone,
             Gender: gender,
             password: password
         }
@@ -35,12 +39,14 @@ submitButton.addEventListener("click", (e) => {
         try{
             const response = await fetch(url, defineHeaders)
             const data = await response.json();
-            if(data.Names){
+            console.log(data)
+            if(data.email){
                 setTimeout(function() {
                     document.getElementById("loader").style.display = "block";
                     setTimeout(function() {
                         document.getElementById("loader").style.display = "none"
-                        fullNameINput.value = ""
+                        firstNameInput.value = ""
+                        lastNameINput.value = ""
                         telephoneInput.value = ""
                         emailInput.value= ""
                         genderValue.value=""
