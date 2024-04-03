@@ -182,7 +182,7 @@ const therapistsFeedBack = () => {
     feedBack = `
     <div class='feedback'>
         <p class="direct-feedback">If you want to provide feedback on the session,  please fill out this form.</p>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWOEEuuJNApnBoH3sg1JIuAAQ_fQmQ1CS558qoK_GLRd6D8Q/viewform?vc=0&c=0&w=1&flr=0" id="google-form">Google form</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWOEEuuJNApnBoH3sg1JIuAAQ_fQmQ1CS558qoK_GLRd6D8Q/viewform" id="google-form">Google form</a>
       
     </div>`; 
     appointMents.innerHTML += feedBack;
