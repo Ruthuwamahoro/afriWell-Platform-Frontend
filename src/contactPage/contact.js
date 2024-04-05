@@ -9,6 +9,7 @@ const notif = document.getElementById('notification')
 
 
 const url = "https://afriwell-platform-backend.onrender.com/api/contact/contact"
+// const url = "http://localhost:8000/api/contact/contact"
 
 submitButton.addEventListener("click", (e) => {
     e.preventDefault()
@@ -60,7 +61,7 @@ submitButton.addEventListener("click", (e) => {
                 errorMessage.textContent = ' ';
                 
             } else {
-                errorMessage.textContent = data.error.split(',');
+                errorMessage.textContent = erro;
                 errorMessage.style.color = 'red';
                 errorMessage.style.paddingLeft = '30px';
             }

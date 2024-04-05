@@ -9,7 +9,7 @@ const notif = document.getElementById('notification')
 const errorMessage = document.getElementById('errorProvidedMessage')
 
 const url = "https://afriwell-platform-backend.onrender.com/api/user/register"
-// const url = "http://localhost:8000/api/user/register"
+//const url = "http://localhost:8000/api/user/register"
 
 submitButton.addEventListener("click", (e) => {
     e.preventDefault()
@@ -36,10 +36,11 @@ submitButton.addEventListener("click", (e) => {
             headers:headers,
             body: JSON.stringify(wholeData)
         }
+        console.log(defineHeaders)
         try{
             const response = await fetch(url, defineHeaders)
             const data = await response.json();
-            console.log(data)
+            console.log("==========",data)
             if(data.email){
                 setTimeout(function() {
                     document.getElementById("loader").style.display = "block";

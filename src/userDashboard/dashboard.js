@@ -8,7 +8,7 @@ if(!getToken){
 const notif = document.getElementById('notification')
 const getId = localStorage.getItem('userId')
 console.log(getId)
-
+//const url = "http://localhost:8000/api/user/booking"
 const url = 'https://afriwell-platform-backend.onrender.com/api/user/booking'
 document.addEventListener('DOMContentLoaded', async(e) => {
     e.preventDefault()
