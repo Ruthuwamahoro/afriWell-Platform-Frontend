@@ -1,8 +1,15 @@
+const getToken = localStorage.getItem('Token')
+if(!getToken){
+    window.location.replace('../loginPage/login.html')
+} 
+
+
+
 const notif = document.getElementById('notification')
 const getId = localStorage.getItem('userId')
 console.log(getId)
 
-const url = 'http://localhost:8000/api/user/booking'
+const url = 'https://afriwell-platform-backend.onrender.com/api/user/booking'
 document.addEventListener('DOMContentLoaded', async(e) => {
     e.preventDefault()
     const headers = new Headers()
@@ -51,9 +58,9 @@ document.addEventListener('DOMContentLoaded', async(e) => {
 
             <div class="dropdown-cont">
                 <div class="dropdown-content">
-                    <a href="#"> ${getInfo.firstName + getInfo.lastName} <br/></a>
+                    <a href="#">Names:<br>${getInfo.firstName +" " + getInfo.lastName}</a>
 
-                    <a href="#">${getInfo.email}<br/></a>
+                    <a href="#">Email: ${getInfo.email}<br/></a>
                 </div>
             </div>
         `
@@ -189,8 +196,3 @@ const therapistsFeedBack = () => {
     
     
 }
-
-const getMettingLink = () => {
-
-}
-  

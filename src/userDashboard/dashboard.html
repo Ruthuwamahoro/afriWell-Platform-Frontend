@@ -12,22 +12,24 @@
   <div class="navbar">
     <a href="../bookingInfo/info.html"><i class="fa-regular fa-circle-left" style="margin-right: 10px"></i>Back</a>
     
-    <div class="dropdown">
-      <a href="#"><i class="fa-solid fa-user" style="margin-right: 10px"></i>Profile</a>
+    <a href="../homePage/home.html" style="cursor: pointer"><i class="fa-solid fa-house"></i>Home</a>
+    <div class="dropdown" style="border-radius: 10px;color:red">
+      <a href="#"><i class="fa-solid fa-user" style="margin-right: 10px" ></i>Profile</a>
       <div class="dropdown-content-container">        <div class="dropdown-cont">
-          <div class="dropdown-content">
-            <a href="#">Full Name</a>
-            <a href="#">Email</a>
-            <a href="#">Gender</a>
-          </div>
+        <div class="dropdown-content">
+          <a href="#">Full Name</a>
+          <a href="#">Email</a>
         </div>
       </div>
     </div>
+    
   </div>
-  <p id="status-session"></p>
+  <a href="../loginPage/login.html" id="logout" style="cursor: pointer;">Logout<i class="fa-solid fa-right-from-bracket"></i></a>
+</div>
+<p id="status-session"></p>
 
   <div class="notification" id="notification">
-    Successfully submitted .Check your email
+    Successfully submitted .Continue check your dashboard
   </div>
   <h2 id="no-app" >No Appointment yet</h2>
   <section  id="appointments">
@@ -66,5 +68,6 @@
   </section>
 
   <script src="dashboard.js"></script>
+  <script src="logout.js"></script>
 </body>
 </html>

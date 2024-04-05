@@ -7,9 +7,9 @@ const submitButton = document.getElementById('submit')
 const notif = document.getElementById('notification')
 const errorMessage = document.getElementById('errorProvidedMessage')
 
-const url = "http://localhost:8000/api/user/booking"
+// const url = "http://localhost:8000/api/user/booking"
 
-// const url = "https://afriwell-platform-backend.onrender.com/api/user/booking"
+const url = "https://afriwell-platform-backend.onrender.com/api/user/booking"
 
 
 

@@ -8,8 +8,8 @@ const submitButton = document.getElementById('submitButton')
 const notif = document.getElementById('notification')
 const errorMessage = document.getElementById('errorProvidedMessage')
 
-// const url = "https://afriwell-platform-backend.onrender.com/api/user/register"
-const url = "http://localhost:8000/api/user/register"
+const url = "https://afriwell-platform-backend.onrender.com/api/user/register"
+// const url = "http://localhost:8000/api/user/register"
 
 submitButton.addEventListener("click", (e) => {
     e.preventDefault()

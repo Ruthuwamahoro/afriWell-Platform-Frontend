@@ -3,8 +3,8 @@ const passwordInput = document.getElementById('password')
 const errorMessage = document.getElementById('errorProvidedMessage')
 const loginButton = document.getElementById('login-button');
 
-// const url = 'https://afriwell-platform-backend.onrender.com/api/auth/login'
-const url = 'http://localhost:8000/api/auth/login'
+const url = 'https://afriwell-platform-backend.onrender.com/api/auth/login'
+// const url = 'http://localhost:8000/api/auth/login'
 loginButton.addEventListener(('click'), async(e) => {
     e.preventDefault();
     const headers = new Headers()
